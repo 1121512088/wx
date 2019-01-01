@@ -1,0 +1,33 @@
+<!--pages/detail/detail.wxml-->
+<view class='detail'>
+
+  <view class='banner'>
+    <image class='banner_img' src="../../image/img.jpg"></image>
+  </view>
+
+  <view class='content'>
+    <view wx:for="{{detailList.songlist}}" data-songmid="{{item.songmid}}" data-singer="{{item.singer}}" data-songname="{{item.songname}}" bindtap="audioPlay" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__hd">
+          <span style="width: 20px;height: 20px;margin-right: 5px; display: inline-block;">{{index + 1}}</span>
+        </view>
+        <view class="weui-cell__bd weui-cell_primary">
+            <view>{{item.songname}}</view>
+            <text>{{item.singer}}</text>
+        </view>
+        <!-- <view class="weui-cell__ft weui-cell__ft_in-access"></view> -->
+    </view>
+  </view>
+
+  <view class='footer' wx:if="{{hide}}">
+    <audio
+      class='footer_audio'
+      poster="{{poster}}"
+      name="{{name}}"
+      author="{{author}}"
+      src="{{src}}"
+      id="myAudio"
+      controls
+      loop
+    ></audio>
+  </view>
+</view>

@@ -1,0 +1,10 @@
+.log-list {
+  display: flex;
+  flex-direction: column;
+  /* padding: 40rpx; */
+}
+
+.slide-image {
+  width: 100%;
+  height: 100%; 
+}

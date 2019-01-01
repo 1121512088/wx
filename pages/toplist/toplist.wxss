@@ -1,0 +1,33 @@
+/* pages/toplist/toplist.wxss */
+.toplist {
+  height: 100%;
+  width: 100%;
+}
+
+.header {
+  background: #ffff99;
+  color: #7e7e52;
+  font-size: 12px;
+}
+
+.toplist_content{
+  width: 100%;
+  padding: 5px 5px;
+  box-sizing: border-box;
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; */
+}
+
+.toplist_content_list {
+  width: 32%;
+  float: left;
+  margin-right: 4px;
+}
+
+.toplist_content_img {
+  width: 100%;
+  height: 100px;
+}
+
+

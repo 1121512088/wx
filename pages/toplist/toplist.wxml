@@ -1,0 +1,31 @@
+<!--pages/toplist/toplist.wxml-->
+<view class='toplist'>
+  <!-- <view class="weui-panel__bd">
+    <navigator url="" wx:for="{{list}}" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+        <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+            <image class="weui-media-box__thumb" src="{{item.picUrl}}" />
+        </view>
+        <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+            <view class="weui-media-box__title">{{item.title}}</view>
+            <view class="weui-media-box__desc" wx:for="{{item.songList}}" wx:for-index="idx" wx:for-item="val">
+              {{val.number}} 
+              {{val.songname}} 
+              {{val.singername}} 
+            </view>
+        </view>
+    </navigator>
+</view> -->
+
+  <view class='header'>
+    纯属个人，如有侵权，请联系1121512088
+  </view>
+  <view class='toplist_content'>
+    <view class="toplist_content_list" wx:for="{{list}}" wx:for-item="item" bindtap="taphistory" data-id="{{item.id}}" >
+      <image
+        class='toplist_content_img'
+        style="background-color: #eeeeee;"
+        src="{{item.picUrl}}"
+      ></image>
+    </view>
+  </view>
+</view>

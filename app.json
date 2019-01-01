@@ -1,0 +1,15 @@
+{
+  "pages":[
+    "pages/toplist/toplist",
+    "pages/logs/logs",
+    "pages/play/play",
+    "pages/detail/detail"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "街道办_",
+    "navigationBarTextStyle":"black"
+  },
+  "requiredBackgroundModes": ["audio"]
+}

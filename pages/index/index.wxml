@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<view class="home">
+  <swiper
+    indicator-dots="{{indicatorDots}}"
+    autoplay="{{true}}"
+    interval="{{2500}}"
+    indicator-dots="{{true}}"
+  >
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <text style="margin: 10px">电台</text>
+  <view wx:for="{{radioList}}">
+    {{item.picUrl}}
+    {{item.title}}
+    {{item.id}}
+  </view>
+
+</view>
